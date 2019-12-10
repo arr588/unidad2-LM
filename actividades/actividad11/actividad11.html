@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Rellena tu CV</title>
+        <meta name="author" content="Alejandro"/>
+        <meta name="keywords" content="actividad11"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    </head>
+    <body>
+        <h1>Rellena tu CV</h1>
+        <form method="get" action="servidor_act11.php">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="provincia">Provincia</label>
+                <select id="provincia" name="provincia">
+                    <option value="almeria">Almeria</option>
+                    <option value="granada">Granada</option>
+                    <option value="jaen">Jaén</option>
+                    <option value="huelva">Huelva</option>
+                    <option value="cadiz">Cádiz</option>
+                    <option value="sevilla">Sevilla</option>
+                    <option value="cordoba">Córdoba</option>
+                </select>
+                <br/>
+                <br/>
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input size="2" id="fecha_nacimiento" type="number" name="dia_nac"/>
+                <label for="mes">de</label>
+                <select id="mes" name="mes_nac">
+                    <option value="enero">Enero</option>
+                    <option value="febrero">Febrero</option>
+                    <option value="marzo">Marzo</option>
+                    <option value="abril">Abril</option>
+                    <option value="mayo">Mayo</option>
+                    <option value="junio">Junio</option>
+                    <option value="julio">Julio</option>
+                    <option value="agosto">Agosto</option>
+                    <option value="septiembre">Septiembre</option>
+                    <option value="octubre">Octubre</option>
+                    <option value="noviembre">Noviembre</option>
+                    <option value="diciembre">Diciembre</option>
+                </select>
+                <label for="año">Año</label>
+                <input id="año" type="text" name="anyo_nac" maxlength="4" size="4"/>
+                <br/>
+                <br/>
+                <label for="temas">Temas de interés</label>
+                <select id="temas" name="temas[]" multiple="multiple">
+                    <option disabled="disabled">-- Elige una opción --</option>
+                    <option value="ABD">Administración de bases de datos</option>
+                    <option value="programacion">Programación</option>
+                    <option value="seguridad">Seguridad</option>
+                </select>
+            </fieldset>
+            <br/>
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Limpiar"/>
+        </form>
+    </body>
+</html>

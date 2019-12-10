@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Formularios</title>
+        <meta name="author" content="Alejandro"/>
+        <meta name="keywords" content="formularios"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    </head>
+    <body>
+        <h1>Elementos del formulario</h1>
+        <form method="post" action="http://192.168.21.109/unidad2/formularios/formulario2.php" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="inputnombre">Nombre:</label><br/>
+                <input id="inputnombre" type="text" name="nombre"/><br/>
+                <label for="fotos">Foto:</label><br/>
+                <input id="fotos" type="file" name="foto"/>
+                <br/> 
+        </fieldset>
+        <fieldset>
+            <legend>Preguntas de cine</legend>
+            <!--Checkbox-->
+            Géneros de cine favoritos:<br/>
+            <input type="checkbox" name="genero_comedia"/>Comedia<br/>
+            <input type="checkbox" name="genero_accion"/>Acción<br/>
+            <input type="checkbox" name="genero_suspense"/>Suspense<br/>
+            <!--Radio button-->
+            ¿Comes palomitas en el cine?
+            <br/>
+            <input type="radio" name="comer_palomitas" value="si"/>Si
+            <input type="radio" name="comer_palomitas" value="no"/>No
+            <input type="radio" name="comer_palomitas" value="ns/nc"/>No sabe no contesta
+            <br/>
+            <!--Select-->
+            Elige tu cine favorito:<br/>
+            <select name="cine_favorito">
+                <option disabled="disabled" selected="selected">Selecciona una opción...</option>
+                <option value="cine-alcampo">El del alcampo</option>
+                <option value="cine-nuevo">El del centro comercial nuevo</option>
+                <option value="cine-copo">El del COPO</option>
+                <option value="cine-roquetas">El de Roquetas</option>
+            </select>
+            <br/>
+            Describe tu película favorita:<br/>
+            <textarea name="pelicula_favorita" rows="10" cols="60"></textarea>
+            <br/>
+            <!--Select múltiple-->
+            Elige tu zona favorita para sentarte:<br/>
+            <select multiple="multiple" name="sitio_favorito">
+                <option value="principio">Al principio</option>
+                <option value="centro">En medio</option>
+                <option value="final">Al final</option>
+            </select>
+            <br/>
+            <!--Campos hidden-->
+            <input type="hidden" name="id_usuario" value="cookie-1234"/>
+        </fieldset>
+            <br/>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </form>
+    </body>
+</html>

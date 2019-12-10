@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Información sobre el producto</title>
+        <meta name="author" content="Alejandro"/>
+        <meta name="keywords" content="actividad12"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    </head>
+    <body>
+        <h2>Información sobre el producto</h2>
+        <form method="post">
+            <fieldset>
+                <legend>Datos básicos</legend>
+                <label for="nombre">Nombre</label><br/>
+                <input id="nombre" type="text" size="50"/>
+                <br/>
+                <br/>
+                <label for="descripcion">Descripción</label><br/>
+                <textarea id="descripcion" rows="5" cols="50"></textarea>
+                <br/>
+                <br/>
+                <label for="foto">Foto</label>
+                <input type="file" id="foto"/>
+                <br/>
+                <br/>
+                <input type="checkbox"/> Añadir contador de visitas
+            </fieldset>
+            <fieldset>
+                <legend>Datos económicos</legend>
+                <label for="precio">Precio</label>
+                <input type="text" id="precio" size="3"/> € &nbsp&nbsp&nbsp&nbsp&nbsp
+                <label for="impuestos">Impuestos </label>
+                <select id="impuestos">
+                    <option value="4">4%</option>
+                    <option value="7">7%</option>
+                    <option value="16">16%</option>
+                    <option value="25">25%</option>
+                </select>
+                <br/>
+                <br/>
+                <label for="promocion">Promoción</label><br/>
+                <input type="radio" name="pr"/>Ninguno<br/>
+                <input type="radio" name="pr"/>Transporte gratuito<br/>
+                <input type="radio" name="pr"/>Descuento 5%<br/>
+            </fieldset>
+        </form>
+    </body>
+</html>

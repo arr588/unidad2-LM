@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Tablas sencillas</title>
+        <meta name="author" value="Alejandro"/>
+        <meta name="keywors" value="tablas1"/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <h1>Tablas sencillas</h1>
+        <h2>Tabla básica</h2>
+        <table border="1">
+            <tr><!-- Table Row -->
+                <th scope="col">Cursos</th>
+                <th scope="col">Horas</th>
+                <th scope="col">Horarios</th>
+            </tr>
+            <tr>
+                <th scope="row">CSS</th>
+                <td>20</td>
+                <td>16:00-20:00</td>
+            </tr>
+            <tr>
+                <th scope="row">HTML</th>
+                <td>16</td>
+                <td>17:00-19:00</td>
+            </tr>
+            <tr>
+                <th scope="row">JS</th>
+                <td>10</td>
+                <td>17:00-19:00</td>
+            </tr>        
+        </table>
+        <h2>Fusión de columnas</h2>
+        <table border="1">
+            <tr>
+                <th scope="col" colspan="4">Tipos de motores</th>
+            </tr>
+            <tr>
+                <td>Gasolina</td>
+                <td>Diésel</td>
+                <td>Híbrido</td>
+                <td>GNC</td>
+            </tr>
+        </table>
+        <h2>Fusión de filas</h2>
+        <table border="1">
+            <tr>
+                <td rowspan="3">Día 14</td>
+                <td><strong>09:00-10:00</strong></br>Desayuno</td>
+            </tr>
+            <tr>
+                <td><strong>10:00-10:30</strong></br>Recepción</td>
+            </tr>
+        </table>
+    </body>
+</html>
